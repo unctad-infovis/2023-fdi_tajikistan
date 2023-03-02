@@ -178,7 +178,7 @@ function ColumnChart({
             color: 'rgba(0, 0, 0, 0.8)',
             style: {
               fontFamily: 'Roboto',
-              fontSize: '13px',
+              fontSize: '16px',
               textOutline: '0 0 0',
               fontWeight: 400
             }
