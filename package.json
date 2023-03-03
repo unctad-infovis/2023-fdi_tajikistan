@@ -43,7 +43,6 @@
     "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
-    "csv-transpose": "^1.2.0",
     "highcharts": "^10.3.3",
     "intersection-observer": "^0.12.2",
     "react-is-visible": "^1.2.0"
