@@ -41,9 +41,9 @@ function Figure1() {
         data_decimals={0}
         note="Data for 2021 is preliminary"
         source="National Bank of Tajikistan (2010–2020) and State Committee On Investments And State Property Management Of The Republic Of Tajikistan (2021)"
-        subtitle="Foreign direct investment flows to Tajikistan, 2012–2021, millions of dollars"
+        subtitle="Foreign direct investment flows to Tajikistan, 2010–2021, millions of dollars"
         suffix="million dollars"
-        title="Investments to Tajikistan bounced back to pre-covid levels in 2021"
+        title="Investments to Tajikistan almost back to pre-COVID levels in 2021"
         ylabel=""
       />
       )}
