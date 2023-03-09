@@ -48,7 +48,7 @@ function Figure1() {
         source="National Bank of Tajikistan (2012–2020) and State Committee On Investments And State Property Management Of The Republic Of Tajikistan (2021)"
         subtitle="Foreign direct investment inflows by sector, 2012–2016 vs 2017–2021, millions of dollars"
         suffix=""
-        title="Investments to manufacturing and construction have dropped drastically"
+        title="Investments to manufacturing and construction in Tajikistan have dropped drastically"
         ylabel=""
         ymax={1000}
       />
