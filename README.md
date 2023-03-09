@@ -2,6 +2,10 @@
 
 **Live demo** https://unctad-infovis.github.io/2023-fdi_tajikistan/
 
+## Used in
+
+* [Tajikistan: Unlocking investment for sustainable development](https://unctad.org/news/tajikistan-unlocking-investment-sustainable-development)
+
 ## Rights of usage
 
 Contact Teemo Tebest.
