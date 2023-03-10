@@ -67,6 +67,12 @@ function BarChart({
         x: 0
       },
       chart: {
+        events: {
+          load() {
+            // eslint-disable-next-line react/no-this-in-sfc
+            this.renderer.image('https://unctad.org/sites/default/files/2022-11/unctad_logo.svg', 5, 15, 80, 100).add();
+          }
+        },
         height: 700,
         resetZoomButton: {
           theme: {
@@ -152,7 +158,9 @@ function BarChart({
           fontWeight: 400,
           lineHeight: '18px'
         },
-        text: subtitle
+        text: subtitle,
+        widthAdjust: -144,
+        x: 100
       },
       title: {
         align: 'left',
@@ -162,7 +170,9 @@ function BarChart({
           fontSize: '30px',
           fontWeight: 700
         },
-        text: title
+        text: title,
+        widthAdjust: -180,
+        x: 100
       },
       plotOptions: {
         bar: {
@@ -171,7 +181,6 @@ function BarChart({
           },
           cursor: 'pointer',
           // groupPadding: 200,
-
           dataLabels: {
             align: (labels_inside) ? 'left' : undefined,
             inside: (labels_inside === true) ? true : undefined,
