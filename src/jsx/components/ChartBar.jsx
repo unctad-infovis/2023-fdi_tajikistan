@@ -48,8 +48,6 @@ function BarChart({
 }) {
   const chartRef = useRef();
 
-  console.log(data);
-
   const chartHeight = 700;
   const isVisible = useIsVisible(chartRef, { once: true });
   const createChart = useCallback(() => {
@@ -183,14 +181,16 @@ function BarChart({
           // groupPadding: 200,
           dataLabels: {
             align: (labels_inside) ? 'left' : undefined,
-            inside: (labels_inside === true) ? true : undefined,
+            allowOverlap: true,
+            color: (labels_inside) ? '#fff' : 'rgba(0, 0, 0, 0.8)',
             enabled: true,
             formatter() {
               // eslint-disable-next-line react/no-this-in-sfc
               return `${roundNr(this.y, data_decimals).toFixed(data_decimals)}`;
             },
+            inside: (labels_inside === true) ? true : undefined,
+            reserveSpace: true,
             step: 2,
-            color: (labels_inside) ? '#fff' : 'rgba(0, 0, 0, 0.8)',
             style: {
               fontFamily: 'Roboto',
               fontSize: '18px',

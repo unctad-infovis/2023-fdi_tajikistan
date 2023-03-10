@@ -180,12 +180,14 @@ function ColumnChart({
           cursor: 'pointer',
           groupPadding: 0.05,
           dataLabels: {
+            color: 'rgba(0, 0, 0, 0.8)',
+            crop: false,
             enabled: true,
             formatter() {
               // eslint-disable-next-line react/no-this-in-sfc
               return `${roundNr(this.y, data_decimals)}`;
             },
-            color: 'rgba(0, 0, 0, 0.8)',
+            overflow: 'none',
             style: {
               fontFamily: 'Roboto',
               fontSize: '16px',
