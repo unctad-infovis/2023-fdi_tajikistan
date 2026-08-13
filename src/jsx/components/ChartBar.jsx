@@ -44,7 +44,7 @@ Highcharts.SVGRenderer.prototype.symbols.download = (x, y, w, h) => {
 };
 
 function BarChart({
-  data, data_decimals, export_title_margin, idx, labels_inside, note, source, subtitle, title, xlabel, ylabel, ymax, ymin
+  data, data_decimals, export_title_margin = 0, idx, labels_inside = false, note = false, source, subtitle = false, title, xlabel = '', ylabel = '', ymax = undefined, ymin = undefined
 }) {
   const chartRef = useRef();
 
@@ -355,17 +355,6 @@ BarChart.propTypes = {
   ylabel: PropTypes.string,
   ymax: PropTypes.number,
   ymin: PropTypes.number
-};
-
-BarChart.defaultProps = {
-  export_title_margin: 0,
-  labels_inside: false,
-  note: false,
-  subtitle: false,
-  xlabel: '',
-  ylabel: '',
-  ymax: undefined,
-  ymin: undefined
 };
 
 export default BarChart;
